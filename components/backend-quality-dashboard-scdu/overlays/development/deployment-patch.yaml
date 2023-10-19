@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-scdu
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-tflx-tenant/mc-quality-dashboard/backend-quality-dashboard-scdu@sha256:4d6e5d63d1bc9f283b51c18f945356ef92acd5f7a60f2dcbb7d6ff4272b1a879
+        name: quality-backend-dashboard
+        resources: {}
+status: {}
